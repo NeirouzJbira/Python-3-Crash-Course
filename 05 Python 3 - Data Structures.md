@@ -60,6 +60,10 @@ Everything in Python is fundamentally an object. It's part of what makes working
 
 #### **Names, References, and Objects**
 
+![1563086409015](assets/1563086409015.png)
+
+[Image Source](https://www.slideshare.net/nnja/memory-management-in-python-the-basics)
+
 When you do something like this:
 
 ```python
