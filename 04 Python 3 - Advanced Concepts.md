@@ -213,7 +213,7 @@ Basically, they're stupidly useful, and super elegant. I love them!
 
 ```python
 # Here's a bunch of more complicated list comprehensions!
-
+# Source: http://www.secnetix.de/olli/Python/list_comprehensions.hawk
 
 # This one uses two list comprehensions together
 noprimes = [j for i in range(2, 8) for j in range(i*2, 50, i)]
@@ -257,10 +257,14 @@ for i in stuff:
 > In this case, you better use `map()` and / or `filter()` with an appropriate function.
 >
 > Of course, you can combine that with list comprehensions.
+>
+> Source: http://www.secnetix.de/olli/Python/list_comprehensions.hawk
 
 ### 2.4 \*args and \*\*kwargs <a name="2.4"></a>
 
 [go to top](#top)
+
+Source: https://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/
 
 Well. Technically it's *whatever \*\*whatever, but convention is *args and \*\*kwargs.
 
@@ -350,6 +354,10 @@ function_name(arguments, *args, **kwargs)
 ### 2.5 Decorators <a name="2.5"></a>
 
 [go to top](#top)
+
+If I don't explain it well enough for you, try: https://realpython.com/blog/python/primer-on-python-decorators/
+
+Or a video tutorial: https://www.youtube.com/watch?v=FsAPt_9Bf3U
 
 If you're having problems with docstrings also, do look up that link. They mention @wraps
 
@@ -600,6 +608,7 @@ multiply_by_3(3) # Returns 9
 #### **Practical Examples**
 
 ```python
+# Source: https://github.com/CoreyMSchafer/code_snippets/blob/master/Decorators/snippets.txt
 
 # Decorators, implemented using a class
 class decorator_class(object):
@@ -638,6 +647,8 @@ def my_timer(orig_func):
 ```
 
 Hopefully these toy examples help you out! I'll be using decorators in some of the other sections too! So it wouldn't hurt to learn it!
+
+But, if you want to go deeper, with classes, for example: https://www.codementor.io/sheena/advanced-use-python-decorators-class-function-du107nxsv
 
 ### 2.6 Memoisation <a name="2.6"></a>
 
@@ -707,6 +718,7 @@ def fib(num):
 ```
 
 ```python
+# https://www.python-course.eu/python3_memoization.php
 # mentions a way to do it with a class as well
 
 class Memoize:
@@ -914,3 +926,15 @@ Now you have the power!
 
 - Colour your console output!
   - https://pypi.python.org/pypi/colorama
+
+```
+                            .     .
+                         .  |\-^-/|  .
+                        /| } O.=.O { |\
+```
+
+​
+
+---
+
+[![Yeah! Buy the DRAGON a COFFEE!](<../_assets/COFFEE%20BUTTON%20%E3%83%BE(%C2%B0%E2%88%87%C2%B0%5E).png>)](https://www.buymeacoffee.com/methylDragon)
