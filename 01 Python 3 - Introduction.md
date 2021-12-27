@@ -9,7 +9,7 @@ Contains a syntax reference for Python 3!
 ### Good to know
 
 - We're using Python 3 here! Python 2 has different syntax!
-- If you have knowledge of computation structures like variables, functions, OOP, etc. it'll be easier
+- If you have knowledge of computation structures like variables, functions, OOP, etc.
 
 ## Table Of Contents <a name="top"></a>
 
@@ -51,6 +51,8 @@ The trouble is, it's slow, so while it's good to learn and use for prototypes, y
 > Also, be aware that **capitalisation** and **whitespace** (like spaces and tabs) are VERY IMPORTANT in Python.
 >
 > Whitespace errors (too many or too little before or after each line) can break your program, so make sure you set them correctly! (A single level of indentation in Python is 4 spaces.)
+
+Here's the Python 3 style guide: https://www.python.org/dev/peps/pep-0008/#function-and-variable-names
 
 ## 2. Basic Python 3 Syntax Reference <a name="2"></a>
 
@@ -110,6 +112,12 @@ print(e)
 from math import pi, e
 from sympy import diff # diff(expression, variable, order of derivative)
 ```
+
+More module advice:
+
+https://stackoverflow.com/questions/1453952/most-useful-python-modules-from-the-standard-library
+
+https://wiki.python.org/moin/UsefulModules
 
 ```python
 # If you're NOT SURE WHAT'S IN THE LIBRARY
@@ -322,6 +330,8 @@ id(my_number) # Returns my_number's address
 > Ok. I said variables are like containers for data, but that only helps beginners visualise it. In Python it's a little different. The variable names you define refer to objects that store values. But when you change the value, what happens is NOT that the value stored in the referred object changes, but rather, another object is created and the variable names becomes a reference to that new object.
 >
 > The names are essentially rebound! (I'm guessing this might be why the performance is so meh)
+>
+> See: https://stackoverflow.com/questions/10262920/understanding-pythons-call-by-object-style-of-passing-function-arguments
 
 ```python
 # Now, if you wanted to CHECK (in a conditional) what the type of a variable is
@@ -359,6 +369,10 @@ Arithmetic priority for the basic operators in Python is as follows:
 
 # If operators are tied, go from left to right
 ```
+
+There are others though!
+
+https://www.tutorialspoint.com/python/operators_precedence_example.htm
 
 ### 2.6 More Arithmetic <a name="2.6"></a>
 
@@ -723,6 +737,8 @@ def most_frequent(lst):
 
 [go to top](#top)
 
+Read more: https://www.programiz.com/python-programming/set
+
 Sets are **unordered** collections of **unique items!** Adding a duplicate to a set will not add anything!
 
 Items added to a set must be immutable, but the set itself is mutable.
@@ -792,6 +808,7 @@ example_set.pop() # This will also return the value
 # Clear the set
 example_set.clear()
 
+# There's a bunch more: https://www.programiz.com/python-programming/set
 ```
 
 #### **Set Operations**
@@ -976,6 +993,8 @@ while not userID or not password or " " in userID or " " in password:
 Python does for loops in a way I don't really prefer... (I learnt them doing C++) But eh, I guess it can be a little more intuitive...?
 
 If you really want to go advanced and ask about how the for loop really works, see:
+
+https://www.codementor.io/sheena/python-generators-and-iterators-du1082iua
 
 ```python
 # Iterate FOR each element in a list
@@ -1382,3 +1401,17 @@ Ever wondered how this works? Python implements this using Iterables and Iterato
 > Now remember that we are in the dark room. Or almost dark. The thing is that we don’t clearly see those bricks, what color they are, what shape etc. So even if we want to do something with them – aka **iterate through them** – we don’t really know what and how because it is too dark.
 >
 > What we can do is near to first brick – as element of a bricks kit – we can put a piece of white fluorescent paper in order for us to see where the first brick-element is. And each time we take a brick from a kit, we replace the white piece of paper to a next brick in order to be able to see that in the dark room. This white piece of paper is nothing more than an **iterator**. It is an **object as well**. But an object that we can use to work and play with elements of our iterable object – the bricks kit.
+>
+> (https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols)
+
+```
+                            .     .
+                         .  |\-^-/|  .
+                        /| } O.=.O { |\
+```
+
+​
+
+---
+
+[![Yeah! Buy the DRAGON a COFFEE!](<../_assets/COFFEE%20BUTTON%20%E3%83%BE(%C2%B0%E2%88%87%C2%B0%5E).png>)](https://www.buymeacoffee.com/methylDragon)
