@@ -1,7 +1,7 @@
-# OOP-Python-3-Crash-Course
+# OOP Python 3 Crash Course
 
-Contains an advanced syntax reference for Python 3.
-This time, we'll be going through OOP !
+Contains an advanced syntax reference for Python 3  
+This time, we'll be going through OOP!
 
 ---
 
@@ -14,7 +14,7 @@ This time, we'll be going through OOP !
 ### Good to know
 
 - We're using Python 3 here! Python 2 has different syntax!
-- If you have knowledge of computation structures like variables, functions, OOP, etc. it'll be easier
+- If you have knowledge of computation structures like variables, functions, OOP, etc.
 
 ## Table Of Contents <a name="top"></a>
 
@@ -155,6 +155,12 @@ In Python 3,
 > \_\_element_name will behave like a private element at the outset, but that's because Python will mangle the name into \_parent\_\_element_name. It's technically still available for use, but we can just assume no sane person would actually do it. (... Although)
 >
 > \_element_name is just conventionally taken to be 'private', but we can just take it to be 'protected', since children will inherit it.
+>
+> More info:
+>
+> (https://stackoverflow.com/questions/20261517/inheritance-of-private-and-protected-methods-in-python)
+>
+> (http://radek.io/2011/07/21/private-protected-and-public-in-python/)
 
 ### 2.2 Class Definition <a name="2.2"></a>
 
@@ -228,6 +234,8 @@ print(cat.get_name()) # Prints: Cate
 ### 2.3 Child Class Definition <a name="2.3"></a>
 
 [go to top](#top)
+
+Note: https://stackoverflow.com/questions/860339/difference-between-private-public-and-protected-inheritance
 
 > ```
 > Member in base class : Private   Protected   Public
@@ -395,6 +403,8 @@ methylDragon.get_type() # Prints: Dragon
 You might have noticed that the methods like `__init__(self)` `__str__(self)`, etc. seem kinda special.
 
 That's because they are! They're part of a group of pre-defined methods called **magic methods**.
+
+There's one more I'd like to tell you about, but the rest of them are here: https://rszalski.github.io/magicmethods/
 
 ```python
 # If __init__(self) is the constructor method
@@ -717,3 +727,15 @@ my_object = Some_Class()
 ```
 
 Overall a pretty cool concept! Go forth and make your own modules!
+
+```
+                            .     .
+                         .  |\-^-/|  .
+                        /| } O.=.O { |\
+```
+
+​
+
+---
+
+[![Yeah! Buy the DRAGON a COFFEE!](<../_assets/COFFEE%20BUTTON%20%E3%83%BE(%C2%B0%E2%88%87%C2%B0%5E).png>)](https://www.buymeacoffee.com/methylDragon)
